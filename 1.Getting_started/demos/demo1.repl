@@ -1,0 +1,20 @@
+bharathkumarraju@R77-NB193 link_practice % python3
+Python 3.9.0 (default, Oct 27 2020, 14:15:17)
+[Clang 12.0.0 (clang-1200.0.32.21)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 3 * 18
+54
+>>> x = 5
+>>> 25 * x
+125
+>>> _
+125
+>>> _
+125
+>>> _ * 4
+500
+>>>
+
+>>> print('hello, world!!!')
+hello, world!!!
+>>>

@@ -1,0 +1,28 @@
+>>> for i in range(5):
+...     x = i * 10
+...     print(x)
+...
+0
+10
+20
+30
+40
+>>>
+
+
+>>> import math
+>>> math.factorial(4)
+24
+>>> math.factorial(5)
+120
+>>>
+
+
+>>> n = 5
+>>> k = 3
+>>> math.factorial(n) / (math.factorial(k) * math.factorial(n - k))
+10.0
+>>> from math import factorial
+>>> factorial(n) / (factorial(k) * factorial(n-k))
+10.0
+>>>
