@@ -1,0 +1,40 @@
+
+>>> g = 20
+>>> g == 20
+True
+>>> g == 15
+False
+>>> g == -15
+False
+
+
+>>> g == "-15wrie"
+False
+>>> g != "-15wrie"
+True
+>>> g != ""
+True
+>>> g != "hello"
+True
+>>>
+>>> g != 20
+False
+>>>
+
+>>> g < 20
+False
+>>> g <= 20
+True
+>>> g <= 30
+True
+>>> g <= 18
+False
+>>>
+
+>>> g >= 20
+True
+>>> g > 30
+False
+>>>
+
+
