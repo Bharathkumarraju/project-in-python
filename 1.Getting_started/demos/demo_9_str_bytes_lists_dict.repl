@@ -1,0 +1,67 @@
+>>> "first" "second"
+'firstsecond'
+>>>
+
+>>> "first" "second"
+'firstsecond'
+>>> """ hello
+... hello1
+... hellop"
+...
+... """
+' hello\nhello1\nhellop"\n\n'
+>>>
+
+
+>>> m = "This string\n spans \n multiple \n lines"
+>>> print(m)
+This string
+ spans
+ multiple
+ lines
+>>>
+
+>>> path = r'C:\Users\Bharath\Documents\files'
+>>> print(path)
+C:\Users\Bharath\Documents\files
+>>>
+
+>>> s = 'parrot'
+>>> s[0]
+'p'
+>>> s[5]
+'t'
+>>>
+
+>>> type(s[5])
+<class 'str'>
+>>>
+
+
+
+>>> c = "singapore"
+>>> c.capitalize()
+'Singapore'
+>>> c
+'singapore'
+>>>
+
+
+>>> '\xe5'
+'å'
+>>> '\345'
+'å'
+>>> '\245'
+'¥'
+>>> '\845'
+'\\845'
+>>> '\399'
+'\x0399'
+>>>
+
+
+
+
+
+
+

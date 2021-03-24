@@ -1,0 +1,43 @@
+>>> if True:
+...     print("It's true!")
+...
+It's true!
+>>> if False:
+...     print("It's true!")
+...
+>>>
+
+
+>>> if bool("eggs"):
+...     print("Yes Please!")
+...
+Yes Please!
+>>> if "eggs":
+...     print("Yes Please!")
+...
+Yes Please!
+>>>
+
+
+
+>>> h = 42
+>>> if h > 50:
+...     print("Greater than 50")
+... else:
+...    print("50 or smaller")
+...
+50 or smaller
+
+
+
+>>> if h > 50:
+...     print("Greater than 50")
+... else:
+...     if h < 20:
+...         print("less than 20")
+...     else:
+...        print("Between 20 and 50")
+...
+Between 20 and 50
+>>>
+
