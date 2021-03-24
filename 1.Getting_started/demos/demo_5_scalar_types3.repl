@@ -1,0 +1,44 @@
+>>> None
+>>> a = None
+>>> a is None
+True
+>>>
+
+
+>>> True
+True
+>>> False
+False
+>>> bool(0)
+False
+>>> bool(65)
+True
+>>> bool(0.0)
+False
+>>> bool(0.1)
+True
+>>> bool(-0.1)
+True
+>>> bool(-1.1353)
+True
+>>>
+
+
+
+
+
+>>> bool([])
+False
+>>> bool([1,2,3])
+True
+>>> bool("")
+False
+>>> bool("sfsdf")
+True
+>>> bool("True")
+True
+>>> bool("False")
+True
+>>>
+
+
