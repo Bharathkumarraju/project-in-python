@@ -1,0 +1,60 @@
+# __name__ dunder in python:
+------------------------------------------->
+
+__name__
+
+Specially named variable allowing us to detect whether a module is run as script or imported into another module.
+
+
+
+>>> import words_new
+words_new
+>>>
+
+# First time only it prints module name
+
+>>> import words_new
+words_new
+>>> import words_new
+>>> import words_new
+>>>
+
+
+
+bharathkumarraju@R77-NB193 demos % python3 words_new.py
+__main__
+bharathkumarraju@R77-NB193 demos % python3 words_new.py
+__main__
+bharathkumarraju@R77-NB193 demos % python3 words_new.py
+__main__
+bharathkumarraju@R77-NB193 demos % python3 words_new.py
+__main__
+bharathkumarraju@R77-NB193 demos %
+
+
+--------------------------------------------->
+
+>>> import words_new1
+>>> import words_new1
+>>> import words_new1
+>>> import words_new1
+>>> import words_new1
+>>>
+
+
+bharathkumarraju@R77-NB193 demos % python3 words_new1.py
+It
+was
+the
+best
+of
+times
+it
+was
+the
+worst
+of
+times
+it
+was
+bharathkumarraju@R77-NB193 demos %

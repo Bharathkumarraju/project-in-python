@@ -1,0 +1,10 @@
+# In python may language features are implemented or controlled using specially named objects and functions.
+
+# These special names generally have two leading and two trailing underscores.
+
+# This has the benefit of making them visually distinct and fairly easy to remember and unlikely to collide with other names.
+
+
+How to pronounce these special names ----> they called "Dunder name"
+
+

@@ -1,0 +1,112 @@
+>>> def square(x):
+...     return x * x
+...
+>>> square(5)
+25
+>>> square(25)
+625
+>>>
+
+>>> def launch_missiles():
+...     print("Missiles Launched!")
+...
+>>> launch_missiles()
+Missiles Launched!
+>>>
+
+# The above function is not returning a value...actually functions are required to explicitly return a value. The above function just prints because of the side-effect of print function.
+
+# Generally speaking Its a good practice to prefer functions which return values rather than cause effects.
+
+
+>>> def even_or_odd(n):
+...     if n % 2 == 0:
+...         print("even")
+...         return
+...     print("odd")
+...
+>>> W = even_or_odd(31)
+odd
+>>> W is None
+True
+>>> W is str
+False
+>>>
+
+
+
+
+>>> def nth_root(radicand, n):
+...     return radicand ** (1/n)
+...
+>>> nth_root(16, 3)
+2.5198420997897464
+>>> nth_root(16, 2)
+4.0
+>>> nth_root(81, 2)
+9.0
+>>> nth_root(81, 3)
+4.3267487109222245
+>>> nth_root(625, 5)
+3.623898318388478
+>>> nth_root(625, 25)
+1.293704833333986
+>>> nth_root(625, 125)
+1.0528513058880284
+>>> nth_root(625, 1)
+625.0
+>>>
+
+>>> def ordinal_suffix(value):
+...     s = str(value)
+...     if s.endswith('11'):
+...        return 'th'
+...     elif s.endswith('12'):
+...        return 'th'
+...     elif s.endswith('13')
+  File "<stdin>", line 7
+    elif s.endswith('13')
+                         ^
+SyntaxError: invalid syntax
+>>> def nth_root(radicand, n):
+...     return radicand ** (1/n)
+...
+>>> def ordinal_suffix(value):
+...     s = str(value)
+...     if s.endswith('11'):
+...         return 'th'
+...     elif s.endswith('12'):
+...         return 'th'
+...     elif s.endswith('13'):
+...         return 'th'
+...     elif s.endswith('1'):
+...         return 'st'
+...     elif s.endswith('2'):
+...         return 'nd'
+...     elif s.endswith('3'):
+...         return 'rd'
+...     return 'th'
+...
+>>> def ordinal(value):
+...     return str(value) + ordinal_suffix(value)
+...
+>>> def display_nth_root(radicand, n):
+...   root = nth_root(radicand, n)
+...   message = "The " + ordinal(n) + " root of " + str(radicand) + " is " + str(root)
+...   print(message)
+...
+>>> display_nth_root(16, 2)
+The 2nd root of 16 is 4.0
+>>>
+
+
+>>> display_nth_root(64, 4)
+The 4th root of 64 is 2.8284271247461903
+>>>
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+
+>>> hanuman_words =  []
+>>> from urllib.request import urlopen
+>>> story = urlopen('http://sixty-north.com/c/t.txt')
+>>> for line in story:
+...     line_words = line.decode('utf8').split()
+...     for words in line_words:
+...         hanuman_words.append(words)
