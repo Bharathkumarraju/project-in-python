@@ -1,0 +1,46 @@
+>>> b'data'
+b'data'
+>>> b"data"
+b'data'
+>>>
+
+
+>>> d = b'some bytes'
+>>> d[0]
+115
+>>> d[1]
+111
+>>> d[2]
+109
+>>> d[3]
+101
+>>> d[8]
+101
+>>> d.split()
+[b'some', b'bytes']
+>>> print(d)
+b'some bytes'
+>>>
+
+
+
+>>> norsk = "Jeg begynte å fortære en sandwich mens jeg kjørte taxi på vei til quiz"
+>>> data = norsk.encode('utf8')
+>>> data
+b'Jeg begynte \xc3\xa5 fort\xc3\xa6re en sandwich mens jeg kj\xc3\xb8rte taxi p\xc3\xa5 vei til quiz'
+>>>
+
+>>> norwegian = data.decode('utf8')
+>>> norwegian
+'Jeg begynte å fortære en sandwich mens jeg kjørte taxi på vei til quiz'
+>>>
+
+>>> norwegian == norsk
+True
+>>>
+
+
+
+
+
+
