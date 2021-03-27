@@ -1,23 +1,26 @@
->>> [1, 9, 8]
-[1, 9, 8]
->>> a = ["apple", "orange", "pear"]
->>> a
-['apple', 'orange', 'pear']
->>> a[1]=18
->>> a
-['apple', 18, 'pear']
+>>> d = {'bharath': '8334534750', 'hanuman': '123234245', 'brice': '9876554332'}
+>>> d['bharath']
+'8334534750'
+>>> d['bharath'] = '09089008008900'
+>>> d
+{'bharath': '09089008008900', 'hanuman': '123234245', 'brice': '9876554332'}
 >>>
 
 
->>> b=[]
->>> b.append(1.618)
->>> b.append(1.2832840)
->>> b
-[1.618, 1.283284]
+>>> d['bharath12313'] = '000000000000'
+>>> d
+{'bharath': '09089008008900', 'hanuman': '123234245', 'brice': '9876554332', 'bharath12313': '000000000000'}
 >>>
 
 
->>> list("characters")
-['c', 'h', 'a', 'r', 'a', 'c', 't', 'e', 'r', 's']
+>>> e = {}
+>>> type(e)
+<class 'dict'>
+>>> type(d)
+<class 'dict'>
+>>> f = []
+>>> type(f)
+<class 'list'>
 >>>
+
 
