@@ -7,9 +7,16 @@ def fetch_words():
         for words in line_words:
             bk_words.append(words)
     story.close()
+    return bk_words
 
+
+def print_words(bk_words):
     for word in bk_words:
         print(word)
 
+def main():
+    words = fetch_words()
+    print_words(words)
+
 if __name__ == '__main__':
-    fetch_words()
+    main()
