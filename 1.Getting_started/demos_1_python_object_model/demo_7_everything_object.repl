@@ -1,0 +1,32 @@
+bharathkumarraju@R77-NB193 demos_0 % python3
+Python 3.9.0 (default, Oct 27 2020, 14:15:17)
+[Clang 12.0.0 (clang-1200.0.32.21)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import words_new5
+>>> type(words_new5)
+<class 'module'>
+>>> dir(words_new5)
+['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'fetch_words', 'main', 'print_items', 'sys', 'urlopen']
+>>>
+
+>>> type(words_new5.fetch_words)
+<class 'function'>
+>>> dir(words_new5.fetch_words)
+['__annotations__', '__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__globals__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+>>>
+
+
+>>> words_new5.__name__
+'words_new5'
+>>> words_new5.fetch_words.__name__
+'fetch_words'
+>>>
+
+>>> words_new5.fetch_words.__doc__
+'Fetch a list of words from a URL.\n\n       Args:\n           url: The URL of the UTF-8 text document.\n\n       Returns:\n           A list of strings containing the words from\n           the document\n\n    '
+>>>
+
+
+
+
+
