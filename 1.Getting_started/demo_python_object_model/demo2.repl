@@ -1,0 +1,63 @@
+Type "help", "copyright", "credits" or "license" for more information.
+>>> m = [9, 15, 24]
+>>> def modify(k):
+...     k.append(39)
+...     print("k =", k)
+...
+>>>
+>>> modify(m)
+k = [9, 15, 24, 39]
+>>> id(m)
+4345374272
+>>> id(k)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'k' is not defined
+>>> m
+[9, 15, 24, 39]
+>>> k
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'k' is not defined
+>>>
+
+
+----------------------------------------------------->
+
+>>> f = [1, 2, 3, 4, 5]
+>>> def bk_replace(g):
+...     g = [9, 8, 7]
+...     print("g =", g)
+...
+>>>
+>>> bk_replace(f)
+g = [9, 8, 7]
+>>> g
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'g' is not defined
+>>> f
+[1, 2, 3, 4, 5]
+>>>
+
+------------------------------------------->
+
+>>> def replace_contents(g):
+...    g[0] = 18
+...    g[1] = 19
+...    g[2] = 20
+...    print("g =", g)
+...
+>>> f = [11, 12, 13]
+>>> replace_contents(f)
+g = [18, 19, 20]
+>>> f
+[18, 19, 20]
+>>> g
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'g' is not defined
+>>>
+
+------------------------------------------------------------------->
+
