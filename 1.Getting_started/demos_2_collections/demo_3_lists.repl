@@ -1,0 +1,222 @@
+>>> r = [1, 5, 6, 23, 24, 35, 456]
+>>> r[-1]
+456
+>>> r[-2]
+35
+>>> r[-10]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> r[-7]
+1
+>>>
+
+
+>>> r[len(r) - 1]
+456
+>>>
+
+>>> r[0]
+1
+>>> r[-0]
+1
+>>>
+
+>>> s
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> s[1:3]
+[2, 3]
+>>>
+
+>>> s[1:-1]
+[2, 3, 4, 5, 6, 7, 8]
+>>>
+
+>>> s[2:]
+[3, 4, 5, 6, 7, 8, 9]
+>>>
+
+>>> s[:2]
+[1, 2]
+>>>
+
+>>> a = [ [1, 2], [3, 4] ]
+>>> b = a[:]
+>>> a is b
+False
+>>> b
+[[1, 2], [3, 4]]
+>>> a
+[[1, 2], [3, 4]]
+>>>
+
+>>> a [0] is b [0]
+True
+>>> a[0] = [1, 9]
+>>> a [0] is b [0]
+False
+>>>
+
+>>> a == b
+False
+>>> a is b
+False
+>>>
+
+>>> a[1].append(5)
+>>> a
+[[1, 9], [3, 4, 5]]
+>>>
+
+>>> b [1]
+[3, 4, 5]
+>>> b[1]
+[3, 4, 5]
+>>>
+
+>>> b
+[[1, 2], [3, 4, 5]]
+>>> a
+[[1, 9], [3, 4, 5]]
+>>>
+
+>>> c = [ 1, 2 ]
+>>> d = c * 4
+>>> d
+[1, 2, 1, 2, 1, 2, 1, 2]
+>>>
+
+>>> [9] * 10
+[9, 9, 9, 9, 9, 9, 9, 9, 9, 9]
+>>>
+
+
+>>> s = [ [-1, +1] ] * 5
+>>> s
+[[-1, 1], [-1, 1], [-1, 1], [-1, 1], [-1, 1]]
+>>>
+
+>>> s[2].append(7)
+>>> s
+[[-1, 1, 7], [-1, 1, 7], [-1, 1, 7], [-1, 1, 7], [-1, 1, 7]]
+>>>
+
+>>> w = "the quick brown fox jumps over the lazy dog".split()
+>>> w
+['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+>>>
+
+
+>>> i = w.index('fox')
+>>> i
+3
+>>>
+
+>>> w.index('bharath')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'bharath' is not in list
+>>>
+
+>>> w.count("the")
+2
+>>>
+
+
+>>> w.count("the")
+2
+>>> 36 in [1, 2, 3, 45, 36, 37]
+True
+>>>
+
+>>> u = "jackdaws love my big sphinx of quartz".split()
+>>> u
+['jackdaws', 'love', 'my', 'big', 'sphinx', 'of', 'quartz']
+>>>
+
+
+>>> del u[3]
+>>> u
+['jackdaws', 'love', 'my', 'sphinx', 'of', 'quartz']
+>>>
+
+>>> u.remove('love')
+>>> u
+['jackdaws', 'my', 'sphinx', 'of', 'quartz']
+>>>
+
+>>> del u[u.index('quartz')]
+>>> u
+['jackdaws', 'my', 'sphinx', 'of']
+>>>
+
+>>> a
+['I', 'accidentally', 'the', 'whole', 'universe']
+>>> a.insert(2, "destroyed")
+>>> a
+['I', 'accidentally', 'destroyed', 'the', 'whole', 'universe']
+>>>
+
+>>> ' '.join(a)
+'I accidentally destroyed the whole universe'
+>>>
+
+>>> h = 'not perplexing do handwriting family where I illegibly know doctors'.split()
+>>> h
+['not', 'perplexing', 'do', 'handwriting', 'family', 'where', 'I', 'illegibly', 'know', 'doctors']
+>>>
+
+>>> h.sort()
+>>> h
+['I', 'do', 'doctors', 'family', 'handwriting', 'illegibly', 'know', 'not', 'perplexing', 'where']
+>>>
+
+
+>>> h.sort(key=len)
+>>> h
+['I', 'do', 'not', 'know', 'where', 'family', 'doctors', 'illegibly', 'perplexing', 'handwriting']
+>>>
+
+>>> ''.join(h)
+'Idonotknowwherefamilydoctorsillegiblyperplexinghandwriting'
+>>> ' '.join(h)
+'I do not know where family doctors illegibly perplexing handwriting'
+>>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

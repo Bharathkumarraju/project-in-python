@@ -1,0 +1,116 @@
+>>> len("sjkgsdlgkldfldgldhsdafhsdfsdkjfasdgfsfdhasfhsdgfshgfhsdfgsdk")
+60
+>>> "New" + "found" + "land"
+'Newfoundland'
+>>> s = "new"
+>>> s += "found"
+>>> s += "land"
+>>> s
+'newfoundland'
+>>>
+
+
+>>> colors = ';'.join(['#45ff23', '#359dkfgj', '#1298a3', '#a32312'])
+>>> colors
+'#45ff23;#359dkfgj;#1298a3;#a32312'
+>>>
+
+>>> colors.split(';')
+['#45ff23', '#359dkfgj', '#1298a3', '#a32312']
+>>> colors
+'#45ff23;#359dkfgj;#1298a3;#a32312'
+>>>
+
+
+>>> ''.join(["high", "way", "man"])
+'highwayman'
+>>>
+
+>>> "unfogetable".partition('forget')
+('unfogetable', '', '')
+>>> "unforgetable".partition('forget')
+('un', 'forget', 'able')
+>>>
+
+>>> departure, separator, arrival =  "London:Edinburgh".partition(':')
+>>> departure
+'London'
+>>> separator
+':'
+>>> arrival
+'Edinburgh'
+>>> origin, _, destination = "Seattle-Boston".partition('-')
+>>> origin
+'Seattle'
+>>> _
+'-'
+>>> destination
+'Boston'
+>>>
+
+
+>>> "{0} north {1} east".format(59.7, 10.40)
+'59.7 north 10.4 east'
+>>>
+
+>>> "the age of {0} is {1}".format('Bharath', 33)
+'the age of Bharath is 33'
+>>>
+
+>>> "the age of {0} is {1} and {0}'s Birth Day is {2}".format('Bharath', 33, 'June 12th')
+"the age of Bharath is 33 and Bharath's Birth Day is June 12th"
+>>>
+
+>>> "Current position of {latitude} and {longitude}".format(latitude="60N", longitude="5E")
+'Current position of 60N and 5E'
+>>>
+
+>>> "galactic position x={pos[0]}, y={pos[1]}, z={pos[2]}".format(pos=(65.2, 23.23, 754.343))
+'galactic position x=65.2, y=23.23, z=754.343'
+>>>
+
+
+>>> "Math constants: pi={m.pi}, e={m.e}".format(m=math)
+'Math constants: pi=3.141592653589793, e=2.718281828459045'
+>>>
+
+>>> "Math constants: pi={m.pi:.3f}, e={m.e:.3f}".format(m=math)
+'Math constants: pi=3.142, e=2.718'
+>>>
+
+>>> 'the value is {value}'.format(value=value)
+'the value is 80'
+>>>
+
+>>> "one plus one is {1 + 1}"
+'one plus one is {1 + 1}'
+>>> f"one plus one is {1 + 1}"
+'one plus one is 2'
+>>>
+
+>>> f'The value is {value}'
+'The value is 80'
+>>>
+
+>>> import datetime
+>>> f'The current time is {datetime.datetime.now().isoformat()}.'
+'The current time is 2021-03-28T17:12:41.032324.'
+>>>
+
+>>> import math
+>>> f'Math constants: pi={math.pi}, e={math.e}'
+'Math constants: pi=3.141592653589793, e=2.718281828459045'
+>>> f'Math constants: pi={math.pi:.3f}, e={math.e:.3f}'
+'Math constants: pi=3.142, e=2.718'
+>>>
+
+
+
+
+
+
+
+
+
+
+
