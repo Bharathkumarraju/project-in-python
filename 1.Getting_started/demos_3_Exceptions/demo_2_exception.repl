@@ -1,0 +1,25 @@
+>>> from exceptional_handling6 import convert
+>>> from exceptional_handling6 import string_log
+>>> string_log("ouch!".split())
+Conversion error: KeyError('ouch!')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_3_Exceptions/exceptional_handling6.py", line 32, in string_log
+    return log(v)
+ValueError: math domain error
+>>>
+
+
+>>> from exceptional_handling6 import string_log
+>>> string_log("ouch!".split())
+Conversion error: KeyError('ouch!')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_3_Exceptions/exceptional_handling6.py", line 29, in string_log
+    v = convert(s)
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_3_Exceptions/exceptional_handling6.py", line 20, in convert
+    number += DIGIT_MAP[i]
+KeyError: 'ouch!'
+>>>
+
+

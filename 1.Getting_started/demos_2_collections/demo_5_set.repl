@@ -1,0 +1,73 @@
+Unordered collection of unique elements.
+
+
+>>> p = {6, 28, 496, 8128, 33550336}
+>>> type(p)
+<class 'set'>
+>>> d = {}
+>>> type(d)
+<class 'dict'>
+>>> e = set()
+>>> e
+set()
+
+
+>>> e = set()
+>>> e
+set()
+>>>
+
+
+
+>>> s = set([2, 4, 16, 64, 4096, 65536, 262144])
+>>> s
+{4096, 64, 2, 65536, 4, 262144, 16}
+>>> s = set([2, 4, 16, 64, 4096, 65536, 262144, 2, 4, 16])
+>>> s
+{4096, 64, 2, 65536, 4, 262144, 16}
+>>>
+
+>>> for x in {1, 2, 4, 8, 16, 32}:
+...     print(x)
+...
+32
+1
+2
+4
+8
+16
+>>>
+
+
+
+>>> blond_hair = {'Harry', 'Jack', 'Amelia', 'Mia', 'Joshua'}
+>>> smell_hcn = {'Harry', 'Amelia'}
+>>> taste_ptc = {'Harry', 'Lily', 'Amelia', 'Lola'}
+>>> o_blood = {'Mia', 'Joshua', 'Lily', 'Olivia'}
+>>> b_blood = {'Amelia', 'Jack'}
+>>> a_blood = {'Harry'}
+>>> ab_blood = {'Joshua', 'Lola'}
+>>> blue_eyes.union(blond_hair)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'blue_eyes' is not defined
+>>> blue_eyes = {'Olivia', 'Harry', 'Lily', 'Jack', 'Amelia'}
+>>> blue_eyes.union(blond_hair)
+{'Joshua', 'Amelia', 'Harry', 'Olivia', 'Mia', 'Jack', 'Lily'}
+>>>
+
+
+>>> blue_eyes.union(blond_hair)
+{'Joshua', 'Amelia', 'Harry', 'Olivia', 'Mia', 'Jack', 'Lily'}
+>>> blond_hair.union(blue_eyes)
+{'Joshua', 'Amelia', 'Harry', 'Olivia', 'Mia', 'Jack', 'Lily'}
+>>> blue_eyes.intersection(blond_hair)
+{'Amelia', 'Jack', 'Harry'}
+>>> blond_hair.intersection(blue_eyes)
+{'Amelia', 'Jack', 'Harry'}
+>>>
+
+>>> smell_hcn.issubset(blond_hair)
+True
+>>>
+

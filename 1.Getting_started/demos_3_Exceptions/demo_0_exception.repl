@@ -1,0 +1,62 @@
+>>> from exceptional import convert
+>>> convert("one two three".split())
+123
+>>> convert("one two three")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_3_Exceptions/exceptional.py", line 17, in convert
+    number += DIGIT_MAP[i]
+KeyError: 'o'
+>>> "one".split()
+['one']
+>>>
+
+>>> convert("around two grillion".split())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_3_Exceptions/exceptional.py", line 17, in convert
+    number += DIGIT_MAP[i]
+KeyError: 'around'
+>>>
+
+
+
+>>> from exceptional_handling import convert
+>>> convert("aroung hello".split())
+Conversion failed!!!
+-1
+>>>
+
+>>> convert("three three nine".split())
+Conversion succeeded! x = 339
+339
+>>> convert("three three ningfe".split())
+Conversion failed!!!
+-1
+>>>
+
+>>> convert("eleventeen".split())
+Conversion failed!!!
+-1
+>>>
+
+
+>>> from exceptional_handling1 import convert
+>>> convert(512)
+Conversion Failed!!!
+-1
+>>>
+
+>>> convert("one two".split())
+Conversion succeeded! x = 12
+12
+>>>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+>>> from exceptional_handling3 import convert
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_3_Exceptions/exceptional_handling3.py", line 23
+    return x
+    ^
+IndentationError: expected an indented block
+>>>
+
+
+>>> convert("one two three".split())
+123
+>>> convert("onewewe")
+-1
+>>>
+
+
+
+>>> from exceptional_handling5 import convert
+>>> convert("djfkgk")
+Conversion error: KeyError('d')
+-1
+>>>
+
+>>> convert("fail".split())
+Conversion error: KeyError('fail')
+-1
+>>>
+
+
+

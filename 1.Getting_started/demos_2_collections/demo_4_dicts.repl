@@ -1,0 +1,191 @@
+bharathkumarraju@R77-NB193 demos_2_collections % python3
+Python 3.9.0 (default, Oct 27 2020, 14:15:17)
+[Clang 12.0.0 (clang-1200.0.32.21)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> urls = { 'google': 'https://google.com', 'pluralsight': 'http://pluralsight.com',
+...          'microsoft': 'http://microsoft.com', 'apple': 'http://apple.com'}
+>>> urls['pluralsight']
+'http://pluralsight.com'
+>>> urls['apple']
+'http://apple.com'
+>>>
+
+>>> names_and_ages = [ ('bhararth', 33), ('raju', 22), ('abc', 34), ('Dany', 67) ]
+>>> d = dict(names_and_ages)
+>>> d
+{'bhararth': 33, 'raju': 22, 'abc': 34, 'Dany': 67}
+>>>
+
+>>> phonetic = dict(a='alifa', b='bravo', c='charlie', d='delta', e='echo', f='fox')
+>>> phonetic
+{'a': 'alifa', 'b': 'bravo', 'c': 'charlie', 'd': 'delta', 'e': 'echo', 'f': 'fox'}
+>>>
+
+>>> d = dict(goldenrod=0xDAA520, indigo=0x4B0082, seashell=0xFFF5EEE)
+>>> e = d.copy()
+>>> e
+{'goldenrod': 14329120, 'indigo': 4915330, 'seashell': 268394222}
+>>>
+
+>>> g = dict(wheat=0xF5DEB3, khaki=0xF0E68C, crimson=0xDC143C)
+>>> f.update(g)
+>>> f
+{'goldenrod': 14329120, 'indigo': 4915330, 'seashell': 268394222, 'wheat': 16113331, 'khaki': 15787660, 'crimson': 14423100}
+>>>
+
+
+>>> stocks
+{'GOOG': 891, 'AAPL': 416, 'IBM': 194}
+>>> stocks.update({'GOOG': 894, 'YHOO': 25})
+>>> stocks
+{'GOOG': 894, 'AAPL': 416, 'IBM': 194, 'YHOO': 25}
+>>>
+
+
+
+>>> colors = dict(aquamarine='#7FFFD4', burlywood='#DEB887',
+...               chartreuse='#7FFF00', cornflower='#6495ED',
+...               firebrick='#B22222', honeydew='#F0FFF0',
+...               maroon='#B03060', sienna='#A0522D')
+>>> colors
+{'aquamarine': '#7FFFD4', 'burlywood': '#DEB887', 'chartreuse': '#7FFF00', 'cornflower': '#6495ED', 'firebrick': '#B22222', 'honeydew': '#F0FFF0', 'maroon': '#B03060', 'sienna': '#A0522D'}
+>>>
+
+>>> for key in colors:
+...     print(f"{key} => {colors[key]}")
+...
+aquamarine => #7FFFD4
+burlywood => #DEB887
+chartreuse => #7FFF00
+cornflower => #6495ED
+firebrick => #B22222
+honeydew => #F0FFF0
+maroon => #B03060
+sienna => #A0522D
+>>>
+
+>>> for v in colors.keys():
+...     print(v)
+...
+aquamarine
+burlywood
+chartreuse
+cornflower
+firebrick
+honeydew
+maroon
+sienna
+>>> for v in colors.values():
+...     print(v)
+...
+#7FFFD4
+#DEB887
+#7FFF00
+#6495ED
+#B22222
+#F0FFF0
+#B03060
+#A0522D
+>>>
+
+
+>>> for k, v in colors.items():
+...     print(k, v)
+...
+aquamarine #7FFFD4
+burlywood #DEB887
+chartreuse #7FFF00
+cornflower #6495ED
+firebrick #B22222
+honeydew #F0FFF0
+maroon #B03060
+sienna #A0522D
+>>> for k, v in colors.items():
+...     print(f"{k} => {v}")
+...
+aquamarine => #7FFFD4
+burlywood => #DEB887
+chartreuse => #7FFF00
+cornflower => #6495ED
+firebrick => #B22222
+honeydew => #F0FFF0
+maroon => #B03060
+sienna => #A0522D
+>>>
+
+
+
+>>> symbols = dict(usd='$', gbp='£', nzd='$', krw='₩', eur='€', jpy='¥', nok='kr', hhg='Pu', ils='₪')
+>>> symbols
+{'usd': '$', 'gbp': '£', 'nzd': '$', 'krw': '₩', 'eur': '€', 'jpy': '¥', 'nok': 'kr', 'hhg': 'Pu', 'ils': '₪'}
+>>>
+
+>>> 'nzd' in symbols
+True
+>>> 'nzd3' in symbols
+False
+>>>
+
+
+>>> z = {'H': 1, 'Tc': 43, 'Xe': 54, 'Fy': 137, 'Rf': 104, 'Fm': 100}
+>>> z
+{'H': 1, 'Tc': 43, 'Xe': 54, 'Fy': 137, 'Rf': 104, 'Fm': 100}
+
+>>> del z['Fy']
+>>> z
+{'H': 1, 'Tc': 43, 'Xe': 54, 'Rf': 104, 'Fm': 100}
+>>>
+
+
+>>> m['H'] += [4, 5, 6, 7]
+>>> m
+{'H': [1, 2, 3, 4, 5, 6, 7], 'He': [3, 4], 'Li': [6, 7], 'Be': [7, 9, 10], 'B': [10, 11], 'C': [11, 12, 13, 14]}
+>>>
+
+>>> m['N'] = [13, 14, 15]
+>>> m
+{'H': [1, 2, 3, 4, 5, 6, 7], 'He': [3, 4], 'Li': [6, 7], 'Be': [7, 9, 10], 'B': [10, 11], 'C': [11, 12, 13, 14], 'N': [13, 14, 15]}
+>>>
+
+>>> from pprint import pprint as pp
+>>> pp(m)
+{'B': [10, 11],
+ 'Be': [7, 9, 10],
+ 'C': [11, 12, 13, 14],
+ 'H': [1, 2, 3, 4, 5, 6, 7],
+ 'He': [3, 4],
+ 'Li': [6, 7],
+ 'N': [13, 14, 15]}
+>>> m
+{'H': [1, 2, 3, 4, 5, 6, 7], 'He': [3, 4], 'Li': [6, 7], 'Be': [7, 9, 10], 'B': [10, 11], 'C': [11, 12, 13, 14], 'N': [13, 14, 15]}
+>>>
+
+
+
+
+
+
+>>> m = {'H': [1, 2, 3],
+...      'He': [3, 4],
+...      'Li': [6, 7],
+...      'Be': [7, 9, 10],
+...      'B': [10, 11],
+...      'C': [11, 12, 13, 14]}
+>>> m
+{'H': [1, 2, 3], 'He': [3, 4], 'Li': [6, 7], 'Be': [7, 9, 10], 'B': [10, 11], 'C': [11, 12, 13, 14]}
+>>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

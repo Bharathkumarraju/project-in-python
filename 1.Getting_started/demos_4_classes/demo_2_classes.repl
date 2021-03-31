@@ -1,0 +1,50 @@
+>>> from airtravel2 import Flight
+>>> f = Flight("899899")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_4_classes/airtravel2.py", line 6, in __init__
+    raise ValueError(f"No airline code in '{number}'")
+ValueError: No airline code in '899899'
+>>> f = Flight("AN98999")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_4_classes/airtravel2.py", line 12, in __init__
+    raise ValueError(f"Invalid error route number '{number}'")
+ValueError: Invalid error route number 'AN98999'
+>>> f = Flight("dn98999")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/bharathkumarraju/external/project-in-python/1.Getting_started/demos_4_classes/airtravel2.py", line 9, in __init__
+    raise ValueError(f"Invalid airline code '{number}'")
+ValueError: Invalid airline code 'dn98999'
+>>>
+
+
+
+
+
+bharathkumarraju@R77-NB193 demo_4_classes % python3
+Python 3.9.0 (default, Oct 27 2020, 14:15:17)
+[Clang 12.0.0 (clang-1200.0.32.21)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from airtravel2 import Flight
+
+>>> f = Flight("SN9999")
+>>> f.airline()
+'SN'
+>>> f.number()
+'SN9999'
+>>>
+
+
+>>> from airtravel4 import *
+>>> a = Aircraft("G-EUPT", "Airbus A319", num_rows=22, num_seats_per_row=6)
+>>> a.registration()
+'G-EUPT'
+>>> a.seating_plan(
+... )
+(range(1, 23), 'ABCDEF')
+>>> a.model()
+'Airbus A319'
+>>>
+
